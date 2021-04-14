@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: rgb(124, 230, 156);
+  background-color: rgb(196, 228, 255);
   margin: 100px auto 0 auto;
   width: 80%;
   text-align: center;
@@ -15,5 +15,5 @@ canvas {
   margin: 0 auto 0 auto;
   display: block;
   border: 5px solid black;
-  background-image: url("picnic.png");
+  background-image: url("picnic8x6.png");
 }
