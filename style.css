@@ -12,7 +12,12 @@ body {
 }
 
 canvas {
-  margin: 0 auto 0 auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+
   display: block;
   border: 5px solid black;
   background-image: url("picnic8x6.png");
