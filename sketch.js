@@ -1,8 +1,8 @@
 function setup() {
   createCanvas(600, 600);
-    background(220);
+    background(200);
 
-    strokeWeight(15);
+    strokeWeight(10);
 }
 
 function draw() {
@@ -19,5 +19,9 @@ function keyTyped(){
 
     //save image
     saveCanvas('fileName', 'png');
+  } else if (key === 'c') {
+
+    //clear image
+    clear();
   }
 }
