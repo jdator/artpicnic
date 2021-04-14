@@ -12,3 +12,12 @@ function draw() {
   }
 
 }
+
+function keyTyped(){
+
+  if (key === 's'){
+
+    //save image
+    saveCanvas('fileName', 'png');
+  }
+}
