@@ -14,5 +14,5 @@ body {
 canvas {
   margin: 0 auto 0 auto;
   display: block;
-  background-image: url("picnic.png");
+  background-image: url("picniccanvas.png");
 }
