@@ -1,7 +1,7 @@
 function setup() {
-  createCanvas(2084px, 1668px);
-  background();
-  strokeWeight(5px);
+  createCanvas(800, 600);
+  background(200);
+  strokeWeight(5);
 }
 
 function draw() {
