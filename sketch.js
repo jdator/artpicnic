@@ -1,15 +1,27 @@
+function _(selector){
+  return
 
-
-function setup() {
-  createCanvas(1000, 600);
-  strokeWeight(5);
+document.querySelector(selector);
 }
 
+function setup() {
+  let canvas = createCanvas(1000, 600);
+  canvas.parent("canvas-wrapper");
+  
 
-function draw() {
+}
 
-  if (mouseIsPressed){
-    line(mouseX, mouseY, pmouseX, pmouseY);
+function mouseDragged(){
+  let type = _("#pen-pencil").checked?"pencil":"brush";
+  let size = parseInt(_("#pen-size").value);
+  let color = _("#pen-color").value;
+  fill(color);
+  stroke(color);
+
+if (type == "pencil"){
+    line(pmouseX, pmouseY, mouseX, mouseY);
+  } else {
+    ellipse(mouseX, mouseY, size, size);
   }
 
 }
